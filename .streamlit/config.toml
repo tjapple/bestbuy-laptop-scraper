@@ -1,0 +1,6 @@
+[theme]
+base = "dark"
+primaryColor = "#F39C12"          # Optional: customize your primary color
+backgroundColor = "#262730"       # Optional: customize your background color
+secondaryBackgroundColor = "#3C3F41"  # Optional: for panels, etc.
+textColor = "#FAFAFA"             # Optional: customize text color

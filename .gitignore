@@ -1,0 +1,7 @@
+.env
+Notes.gdoc
+__pycache__
+upc_watchlist.json
+run_bestbuy_spider.bat
+scrapy_log.log
+mismatch_log.txt
