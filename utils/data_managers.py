@@ -8,13 +8,16 @@ from sqlalchemy.orm import sessionmaker
 
 
 load_dotenv()
-DATABASE_URL = os.getenv('DATABASE_URL')
 WATCHLIST_FILENAME = os.getenv('WATCHLIST_FILENAME')
 
 
 @st.cache_data  # Caches the results to speed up re-runs
 def load_data():
     """Retrieves the joined laptops and price_history tables"""   
+    load_dotenv()
+    DATABASE_URL = os.getenv('DATABASE_URL')
+    if DATABASE_URL.startswith("postgres://"):
+        DATABASE_URL = DATABASE_URL.replace("postgres://", "postgresql://", 1)
     engine = create_engine(DATABASE_URL)
     Session = sessionmaker(bind=engine)
     session = Session()
