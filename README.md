@@ -1,4 +1,4 @@
-# Bestbuy Laptop Scraper
+# BestBuy Laptop Scraper
 A Scrapy + PostgreSQL project that retrieves laptop product data from BestBuy.com and stores it in a database. Price data for specific laptop models are stored based on unique UPC codes. A Streamlit app is used to explore patterns in the current laptop listing using 
 various specifications. Historical price movements and discounts can also be investigated.
 
@@ -26,7 +26,7 @@ conda activate myenv
 ```python
 scrapy crawl bestbuy_spider
 ```
-This will fetch product information and store it in your configured database. 
+*This will fetch product information and store it in your configured database. 
 
 2. Running the Streamlit App:
 ```python
